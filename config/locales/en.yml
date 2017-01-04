@@ -34,4 +34,32 @@ en:
 
   #Home Page
   page_name_home: "Home"
+  home_page_h1: "Welcome to the Sample App"
+  home_page_h2: "This is the home page for the <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a> sample application."
+
+  #Login Page
+  page_name_login: "Login"
+
+  #Sigup Page
+  page_name_sigup: "Sigup"
+  sigup_page_description: "This will be a signup page for new users."
+
+  #News Page
+  page_name_news: "News"
+
+  #Contact Page
+  page_name_contact: "Contact"
+  contact_page_descriptionn: "Contact the Ruby on Rails Tutorial about the sample app at the <a href='http://www.railstutorial.org/contact'>contact page</a>."
+
+  #App Name
+  app_name: "Sample App"
+
+  #Footer Page
+  footer_intro_text: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a> by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+
+  #Button
+  button_sigup_text: "Sign up now!"
+
+  #Image
+  image_logo: "Rails logo"
 
