@@ -1,0 +1,13 @@
+<% provide :title, t("page_name_help") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield :title %> <%= t "title" %></title>
+  </head>
+  <body>
+    <h1><%= t "page_name_help" %></h1>
+    <p>
+      <%= t "description_page", page: "Help" %>
+    </p>
+  </body>
+</html>
