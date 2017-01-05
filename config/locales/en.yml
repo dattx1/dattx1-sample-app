@@ -41,8 +41,11 @@ en:
   page_name_login: "Login"
 
   #Sigup Page
-  page_name_sigup: "Sigup"
+  page_name_sigup: "Sign Up"
   sigup_page_description: "This will be a signup page for new users."
+  button_sigup_submit_text: "Create my account"
+  label_confirmation: "Confirmation"
+  message_signup_succes: "Welcome to the Sample App!"
 
   #News Page
   page_name_news: "News"
@@ -51,6 +54,9 @@ en:
   page_name_contact: "Contact"
   contact_page_descriptionn: "Contact the Ruby on Rails Tutorial about the sample app at the <a href='http://www.railstutorial.org/contact'>contact page</a>."
 
+  #Error Page
+  error_page_description: "The form contains %{message}."
+  error_page_error_message: "error"
   #App Name
   app_name: "Sample App"
 
