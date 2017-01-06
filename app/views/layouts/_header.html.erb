@@ -5,7 +5,22 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to t("page_name_home"), root_path %></li>
         <li><%= link_to t("page_name_help"), help_path %></li>
-        <li><%= link_to t("page_name_login"), "#" %></li>
+        <% if logged_in? %>
+          <li><%= link_to t("logined_user_link_text"), "#" %></li>
+          <li class="dropdown">
+            <%= link_to "#", class: "dropdown-toggle", "data-toggle": "dropdown"  do %>
+              <%= t("logined_drop_title") %><b class="caret"></b>
+            <% end %>
+            <ul class="dropdown-menu">
+              <li><%= link_to t("logined_drop_item_profile"), current_user %></li>
+              <li><%= link_to t("logined_drop_item_settings"), "#" %></li>
+              <li class="divider"></li>
+              <li><%= link_to t("longined_logout_link_text"), logout_path, method: "delete" %></li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to t("login_page_h1"), login_path %></li>
+        <% end %>
       </ul>
     </nav>
   </div>

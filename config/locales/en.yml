@@ -39,6 +39,9 @@ en:
 
   #Login Page
   page_name_login: "Login"
+  login_page_h1: "Log in"
+  label_new_user: "New user?"
+  error_invalid_user: "Invalid email/password combination"
 
   #Sigup Page
   page_name_sigup: "Sign Up"
@@ -57,8 +60,16 @@ en:
   #Error Page
   error_page_description: "The form contains %{message}."
   error_page_error_message: "error"
+
   #App Name
   app_name: "Sample App"
+
+  #Header Page
+  logined_drop_title: "Account"
+  logined_drop_item_profile: "Profile"
+  logined_drop_item_settings: "Settings"
+  logined_user_link_text: "Users"
+  longined_logout_link_text: "Log out"
 
   #Footer Page
   footer_intro_text: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a> by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
