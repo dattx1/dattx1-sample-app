@@ -42,6 +42,7 @@ en:
   login_page_h1: "Log in"
   label_new_user: "New user?"
   error_invalid_user: "Invalid email/password combination"
+  checkbox_remember_text: "Remember me on this computer."
 
   #Sigup Page
   page_name_sigup: "Sign Up"
