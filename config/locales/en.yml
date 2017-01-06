@@ -54,6 +54,13 @@ en:
   #News Page
   page_name_news: "News"
 
+  #Edit Page
+  page_name_edit: "Edit User"
+  edit_page_h1: "Update your profile"
+  button_save_change_text: "Save changes"
+  button_change_avata_text: "change"
+  message_edit_success: "Profile updated"
+
   #Contact Page
   page_name_contact: "Contact"
   contact_page_descriptionn: "Contact the Ruby on Rails Tutorial about the sample app at the <a href='http://www.railstutorial.org/contact'>contact page</a>."
@@ -80,4 +87,17 @@ en:
 
   #Image
   image_logo: "Rails logo"
+
+  #Authorization
+  message_not_login: "Please log in."
+  message_access_denied: "Access Denied"
+  message_un_authority: "Un Authority"
+  message_user_not_Exist: "User Not Exist."
+
+  #User Index Page
+  page_name_user_index: "All users"
+  message_delete_confirm: "You sure?"
+  button_delete_user_text: "delete"
+  message_delete_success: "User deleted"
+  message_delete_failed: "User delete failed"
 

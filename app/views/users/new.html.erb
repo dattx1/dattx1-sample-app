@@ -1,23 +1,8 @@
 <% provide :title, t("page_name_sigup") %>
+<% provide(:button_text, t("button_sigup_text")) %>
 <h1><%=t "page_name_sigup" %></h1>
-
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for @user do |f| %>
-      <%= render "shared/error_messages" %>
-      <%= f.label :name %>
-      <%= f.text_field :name %>
-
-      <%= f.label :email %>
-      <%= f.email_field :email %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-
-      <%= f.label :password_confirmation, t("label_confirmation") %>
-      <%= f.password_field :password_confirmation %>
-
-      <%= f.submit t("button_sigup_text"), class: "btn btn-primary" %>
-    <% end %>
+    <%= render "form" %>
   </div>
 </div>
