@@ -22,6 +22,7 @@
 en:
   hello: "Hello world"
   title: "| Ruby on Rails Tutorial Sample App"
+  hi: "Hi"
 
   #Description Page
   description_page: "This Is %{page} Page."
@@ -50,6 +51,7 @@ en:
   button_sigup_submit_text: "Create my account"
   label_confirmation: "Confirmation"
   message_signup_succes: "Welcome to the Sample App!"
+  message_activation_email: "Please check your email to activate your account."
 
   #News Page
   page_name_news: "News"
@@ -93,6 +95,9 @@ en:
   message_access_denied: "Access Denied"
   message_un_authority: "Un Authority"
   message_user_not_Exist: "User Not Exist."
+  message_user_activated: "Account activated!"
+  message_invalid_activation_link: "Invalid activation link"
+  message_user_not_activated: "Account not activated. Check your email for the activation link."
 
   #User Index Page
   page_name_user_index: "All users"
@@ -100,4 +105,12 @@ en:
   button_delete_user_text: "delete"
   message_delete_success: "User deleted"
   message_delete_failed: "User delete failed"
+
+  #Email
+  email_activation_user_subject: "Account activation"
+  email_activation_content: "Welcome to the Sample App! Click on the link below to activate your account:"
+  email_header_content: "Hi %{name}."
+  email_activation_link_text: "Activate"
+  email_reset_password_header: "Hi"
+
 

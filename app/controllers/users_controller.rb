@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
-  before_action :init_user, except: [:new, :index]
+  before_action :init_user, except: [:new, :index, :create]
 
   def index
     @users = User.paginate page: params[:page]
@@ -19,9 +19,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "message_signup_succes"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "message_activation_email"
+      redirect_to root_url
     else
       render :new
     end
@@ -41,9 +41,8 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user.destroy
-    @user.destroyed ?   flash[:success] = t("message_delete_success"):
-      flash[:danger] = t "message_delete_failed"
+    @user.destroy ? flash[:success] = t("message_delete_success"):
+      flash[:danger] = t("message_delete_failed")
     redirect_to users_url
   end
 
