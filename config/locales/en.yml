@@ -111,6 +111,21 @@ en:
   email_activation_content: "Welcome to the Sample App! Click on the link below to activate your account:"
   email_header_content: "Hi %{name}."
   email_activation_link_text: "Activate"
-  email_reset_password_header: "Hi"
+  email_reset_password_header: "To reset your password click the link below:"
+  email_reset_password_content1: "This link will expire in two hours."
+  email_reset_password_content2: "If you did not request your password to be
+    reset, please ignore this email and your password will stay as it is."
+  email_reset_password_html_header: "Password reset"
 
+  #Forgot Password
+  link_forgot_text: "(forgot password)"
+  forgot_page_h1: "Forgot password"
+  button_submit_text: "Submit"
+  button_update_password_text: "Update password"
+  message_reset_password_infor: "Email sent with password reset instructions"
+  message_reset_password_email_not_found: "Email address not found"
+  message_password_canot_empty: "can't be empty"
+  message_reset_password_success: "Password has been reset."
+  message_user_invalid: "account is invalid"
+  message_password_exprired: "Password reset has expired."
 
