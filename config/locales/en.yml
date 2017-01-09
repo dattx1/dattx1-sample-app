@@ -37,6 +37,7 @@ en:
   page_name_home: "Home"
   home_page_h1: "Welcome to the Sample App"
   home_page_h2: "This is the home page for the <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a> sample application."
+  home_page_micro_post_section_text: "Micropost Feed"
 
   #Login Page
   page_name_login: "Login"
@@ -62,6 +63,9 @@ en:
   button_save_change_text: "Save changes"
   button_change_avata_text: "change"
   message_edit_success: "Profile updated"
+
+  #Show Page
+  total_micro_post: "Microposts (%{total})"
 
   #Contact Page
   page_name_contact: "Contact"
@@ -128,4 +132,15 @@ en:
   message_reset_password_success: "Password has been reset."
   message_user_invalid: "account is invalid"
   message_password_exprired: "Password reset has expired."
+
+  #Micropost page
+  field_posted_time: "Posted %{time} ago."
+  message_micro_post_create_success: "Micropost created!"
+  link_text_view_my_profile: "view my profile"
+  text_area_content_place_holder: "Compose new micropost..."
+  button_post_micro_post_text: "Post"
+  message_micro_post_delete_success: "Micropost deleted"
+  message_micro_post_delete_fail: "Micropost failed"
+  message_max_file_size_allowed: "should be less than 5MB"
+  message_max_file_size_allowed_js: "Maximum file size is 5MB. Please choose a smaller file."
 

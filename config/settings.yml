@@ -1,5 +1,6 @@
 max_length_50: 50
 max_length_255: 255
+max_length_140: 140
 min_length: 6
 image_default_size: 50
 default_host_mail: noreply@example.com
