@@ -1,0 +1,9 @@
+<% @user ||= current_user %>
+<div class="stats">
+  <%= link_to raw("<strong id='following' class='stat'>" +
+    t("label_count_following_post", count: @user.following.count) + "</strong>"),
+      follow_user_path(@user, type: Settings.follow_user.following) %>
+  <%= link_to raw("<strong id='followers' class='stat'>" +
+    t("label_count_followers_post", count: @user.followers.count) + "</strong>"),
+      follow_user_path(@user, type: Settings.follow_user.follower) %>
+</div>

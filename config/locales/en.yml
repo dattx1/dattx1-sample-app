@@ -65,7 +65,7 @@ en:
   message_edit_success: "Profile updated"
 
   #Show Page
-  total_micro_post: "Microposts (%{total})"
+  total_micro_post: "<b>Microposts:</b> (%{total})"
 
   #Contact Page
   page_name_contact: "Contact"
@@ -98,7 +98,7 @@ en:
   message_not_login: "Please log in."
   message_access_denied: "Access Denied"
   message_un_authority: "Un Authority"
-  message_user_not_Exist: "User Not Exist."
+  message_user_not_exist: "User Not Exist."
   message_user_activated: "Account activated!"
   message_invalid_activation_link: "Invalid activation link"
   message_user_not_activated: "Account not activated. Check your email for the activation link."
@@ -143,4 +143,12 @@ en:
   message_micro_post_delete_fail: "Micropost failed"
   message_max_file_size_allowed: "should be less than 5MB"
   message_max_file_size_allowed_js: "Maximum file size is 5MB. Please choose a smaller file."
+  label_count_following_post: "%{count} following."
+  label_count_followers_post: "%{count} followers."
+  #Follow Page
+  title_follower_page: "Followers"
+  title_following_page: "Following"
+  button_submit_follow_text: "Follow"
+  button_submit_un_follow_text: "Un Follow"
+
 
