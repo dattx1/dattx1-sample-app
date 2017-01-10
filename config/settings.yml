@@ -5,3 +5,7 @@ min_length: 6
 image_default_size: 50
 default_host_mail: noreply@example.com
 default_to_email: to@example.org
+follow_user:
+  following: "following"
+  follower: "follower"
+file_size: 30

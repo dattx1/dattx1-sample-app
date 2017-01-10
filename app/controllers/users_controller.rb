@@ -11,6 +11,8 @@ class UsersController < ApplicationController
   def show
     @user
     @microposts = @user.microposts.paginate(page: params[:page])
+    @relation_ship = current_user.active_relationships.find_by(followed_id: @user.id) if
+      current_user.following? @user
   end
 
   def new
@@ -54,8 +56,6 @@ class UsersController < ApplicationController
       :password_confirmation
   end
 
-
-
   def correct_user
     @user = User.find_by id: params[:id]
     unless @user == current_user
@@ -74,7 +74,7 @@ class UsersController < ApplicationController
   def init_user
     @user = User.find_by id: params[:id]
     unless @user.present?
-      flash[:danger] = t "message_user_not_Exist"
+      flash[:danger] = t "message_user_not_exist"
       redirect_to root_url
     end
   end
