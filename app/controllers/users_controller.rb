@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      @user.send_activation_email
+      flash[:success] = edit_account_activation_url(@user.activation_token,  email: @user.email)
       flash[:info] = t "message_activation_email"
       redirect_to root_url
     else
