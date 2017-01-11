@@ -1,8 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
     if logged_in?
-      micropostId = params[:micropostId]
-      @micropost = micropostId.blank? ? current_user.microposts.build : current_user.microposts.find_by(id: micropostId)
+      @micropost = current_user.microposts.build unless @micropost
       @feed_items = current_user.feed.paginate page: params[:page]
     end
   end
