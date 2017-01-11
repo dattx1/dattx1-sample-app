@@ -36,7 +36,8 @@ class UsersController < ApplicationController
   end
 
   def update
-    if @user.update_attributes user_params
+    @user.update_attributes(edit_user_params)
+    if @user.save
       flash[:success] = t "message_edit_success"
       redirect_to @user
     else
@@ -55,6 +56,10 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
+  end
+
+  def edit_user_params
+    params.require(:user).permit :name, :email
   end
 
   def correct_user

@@ -151,4 +151,10 @@ en:
   button_submit_follow_text: "Follow"
   button_submit_un_follow_text: "Un Follow"
 
+  #validation
+  messsage_password_invalid_length: "Password is too short (minimum is 6 characters)"
+  message_edit_micropost_success: "Update Success"
+  label_edit_micropost: "Edit"
+
+
 
