@@ -35,7 +35,7 @@ class MicropostsController < ApplicationController
     if @micropost.save
       flash[:success] = t "message_edit_micropost_success"
       @micropost = nil
-      redirect_to root_url + "?page=" + $page
+      redirect_to $page.nil? ? root_url : root_url + "?page=" + $page
     end
 
   end
